@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+    font-weight: normal;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(burlywood,black);
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button{
+    cursor: pointer;
+    font-size:2rem ;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: rgb(243, 204, 156);
+    margin: 3px;
+    width: 60px;
+}
+
+button.span{
+    width: 200px ;
+}
+
+button:hover{
+    background-color: rgb(238, 229, 215);
+}
+
+.display{
+    display: flex;
+    background-color: rgb(83, 32, 19) ;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    justify-content: space-around;
+    width: 270px;
+    margin: 5px;
+    height: 100px;
+}
+
+.display .prev-operand{
+    color: rgb(146, 150, 146);
+    font-size: 1rem;
+}
+
+.display .curr-operand{
+    color: honeydew;
+    font-size: 2rem;
+}
+
